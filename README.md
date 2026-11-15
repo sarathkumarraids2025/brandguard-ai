@@ -1,203 +1,485 @@
-# BRANDGUARD AI
+# 🛡️ BRANDGUARD AI
 ### Intelligent Brand Governance & Content Intelligence Platform
-> **Tagline:** Every Message Matters. Every Brand Deserves Consistency.
+
+**Every Message Matters. Every Brand Deserves Consistency.**
+
+<p align="center">
+
+  **AI-Powered • Evidence-Based • Enterprise-Ready • Human-Governed**
+
+</p>
 
 ---
 
-## 🌟 Executive Summary
+## 🌟 Overview
 
-**BRANDGUARD AI** is an enterprise-grade, full-stack AI-powered brand governance and content intelligence platform. Organizations publish content across thousands of distributed touchpoints: employees, agencies, marketing teams, and generative AI models. Without rigorous pre-publication governance, brands suffer from:
+**BrandGuard AI** is an intelligent, AI-powered brand governance and content intelligence platform designed to help organizations maintain brand consistency, verify business claims, detect content risks, and ensure that every published message aligns with official brand guidelines.
 
-- Inconsistent brand voice and colloquial tone leakage.
-- Contradictory product claims (e.g. advertising "lifetime warranty" when the approved warranty is 12 months).
-- Outdated metrics (e.g. stating legacy data center counts or founding dates).
-- Prohibited terminology and unsubstantiated superlatives (e.g. "cheap", "100% bug-free").
-- Visual identity drift (off-brand color palettes, low WCAG contrast, missing logos).
-- Premature unauthorized publication without human oversight.
+In today's digital environment, organizations publish thousands of messages across websites, social media, advertisements, marketing campaigns, and AI-generated content.
 
-BRANDGUARD AI enforces systematic, evidence-based quality control before content is published.
+Maintaining a consistent brand identity across these channels is challenging.
 
----
+BrandGuard AI addresses this challenge through an integrated governance ecosystem that combines Natural Language Processing (NLP), Computer Vision, Evidence-Based Verification, and Human-in-the-Loop Approval.
 
-## 🚀 Unique Innovative Features
+Rather than simply checking grammar, BrandGuard AI evaluates whether content is **accurate, consistent, trustworthy, accessible, and brand-compliant.**
 
-1. **Brand Intelligence Brain (Single Source of Truth):**
-   - Central repository for brand identity, mission, values, tone guidelines, typography rules, approved facts, and terminology.
-   - Every approved company fact is tied to a verified source document and verification date.
-   - Built-in multi-format document parser (PDF, DOCX, TXT, CSV) to import knowledge.
+### 🎯 Our Mission
 
-2. **Multidimensional Brand Audit Engine (15 Dimensions):**
-   - Evaluates content across Voice, Tone, Terminology, Approved Facts, Promotional Claims, Outdated Info, Messaging Alignment, Visual Consistency, Logo Usage, Palette Harmony, Typography, Accessibility (WCAG 2.1 AA), Readability (Flesch formula), Grammar, and Legal Risk.
-
-3. **Evidence-Based Claim Verification (Major Innovation):**
-   - Extracts factual assertions (warranty periods, infrastructure numbers, SLA percentages, founding years).
-   - Classifies each claim: `Verified`, `Contradicted`, `Unsupported`, `Outdated`, or `Requires human review`.
-   - Cites exact supporting evidence or displays transparently: `"Unable to verify against approved sources"`. **Never invents evidence.**
-
-4. **Visual Brand Guardian (Computer Vision):**
-   - Inspects uploaded creatives, posters, and banner graphics using Pillow and color science.
-   - Quantizes dominant colors and measures Euclidean/Delta-E distance against the registered brand palette.
-   - Calculates WCAG 2.1 relative luminance and contrast ratio (>= 4.5:1 AA threshold).
-   - Analyzes header quadrant logo presence and returns interactive bounding box coordinates `[ymin, xmin, ymax, xmax]`.
-
-5. **AI Smart Rewrite Studio:**
-   - Generates three brand-compliant stylistic modes:
-     1. **Professional Enterprise** (authoritative, compliant).
-     2. **Friendly & Approachable** (warm, accessible).
-     3. **Marketing-Oriented** (persuasive, legally safe).
-   - Side-by-side diff comparison with user acceptance/rejection controls. Never replaces original text silently.
-
-6. **Brand Guideline Clarity Analyzer (Meta-Audit Innovation):**
-   - Cross-references brand guidelines to detect conflicting rules (e.g. formal corporate voice vs playful social tone without channel scoping), ambiguous wording, and missing facts.
-
-7. **Brand Memory & Recurring Error Detection:**
-   - Identifies recurring violation patterns across departments from past review records.
-   - Generates actionable administrative coaching recommendations.
-
-8. **Human Review & Approval Workflow (RBAC):**
-   - Roles: **ADMIN**, **CREATOR**, **REVIEWER**.
-   - State machine: `Draft` → `Analysing` → `Review Required` → `Revision Requested` → `Resubmitted` → `Approved`.
-   - Immutable audit logs, revision comparison, reviewer feedback comments.
-
-9. **Bilingual Experience (English + தமிழ் Tamil):**
-   - Full toggle in the header: switches navigation, KPI cards, input instructions, explanations, severity badges, and charts between English and Tamil.
-   - Supports bilingual content scanning with Tamil terminology and fact verification.
-
-10. **Real Governance Analytics & CSV Reports:**
-    - 5 Real Chart.js charts (Status Distribution Pie, Severity Doughnut, Category Violations Bar, Compliance Trend Line, Top Violations Horizontal Bar).
-    - 100% database-derived analytics. No fabricated mock data.
-    - Exportable CSV report via `/api/analytics/export-csv`.
+To transform traditional brand guideline management into an intelligent, automated, transparent, and measurable governance process.
 
 ---
 
-## 🏗️ Architecture & Technology Stack
+## ✨ Key Innovation Highlights
 
+| Innovation | What It Does |
+|---|---|
+| 🧠 Brand Intelligence Brain | Centralized brand knowledge and verified information |
+| 🔍 15-Dimension Audit Engine | Multidimensional content compliance analysis |
+| 📚 Evidence-Based Verification | Validates factual claims against approved sources |
+| 🎨 Visual Brand Guardian | Detects visual identity inconsistencies |
+| ✍️ AI Smart Rewrite Studio | Generates brand-aligned content alternatives |
+| 🧩 Guideline Clarity Analyzer | Identifies conflicting and ambiguous brand rules |
+| 🧠 Brand Memory | Detects recurring content violations |
+| 👥 Human Approval Workflow | Enables role-based content governance |
+| 🌐 Bilingual Intelligence | English and Tamil user experience |
+| 📊 Governance Analytics | Data-driven dashboards and CSV reports |
+
+---
+
+## 🚀 Core Features
+
+### 1. 🧠 Brand Intelligence Brain
+
+A centralized knowledge repository that acts as the organization's brand source of truth.
+
+- Brand identity, mission, vision, and values.
+- Brand voice and communication guidelines.
+- Approved facts and company information.
+- Restricted and preferred terminology.
+- Brand typography and color guidelines.
+- Document-based knowledge import.
+- Source references and verification dates.
+
+**Innovation:** Every approved business fact can be connected to its supporting document and verification information.
+
+### 2. 🔍 Multidimensional Brand Audit Engine
+
+Evaluates submitted content across 15 governance dimensions:
+
+1. Brand Voice
+2. Communication Tone
+3. Terminology Compliance
+4. Approved Fact Verification
+5. Promotional Claim Validation
+6. Outdated Information Detection
+7. Messaging Alignment
+8. Visual Consistency
+9. Logo Usage
+10. Brand Palette Harmony
+11. Typography Compliance
+12. WCAG Accessibility
+13. Readability Analysis
+14. Grammar and Language Quality
+15. Legal and Compliance Risk
+
+The platform identifies potential violations and provides actionable recommendations.
+
+### 3. 📚 Evidence-Based Claim Verification
+
+One of BrandGuard AI's major innovations.
+
+The system identifies factual claims such as:
+
+- Product warranty periods.
+- Company establishment dates.
+- Infrastructure statistics.
+- Service-level agreements.
+- Product specifications.
+- Business performance claims.
+
+Each claim is classified into one of five categories:
+
+| Classification | Meaning |
+|---|---|
+| ✅ Verified | Supported by approved evidence |
+| ❌ Contradicted | Conflicts with approved information |
+| ⚠️ Unsupported | No supporting evidence found |
+| 🕒 Outdated | Information requires revalidation |
+| 👤 Human Review | Requires manual verification |
+
+**Responsible AI Principle:** BrandGuard AI does not invent supporting evidence. When verification is unavailable, it transparently reports:
+
+`Unable to verify against approved sources.`
+
+### 4. 🎨 Visual Brand Guardian
+
+An intelligent visual inspection engine for marketing creatives, banners, posters, and promotional assets.
+
+Capabilities include:
+
+- Dominant color extraction.
+- Brand palette comparison.
+- Color-distance analysis.
+- WCAG contrast ratio calculation.
+- Logo presence inspection.
+- Visual compliance warnings.
+- Image analysis and bounding-box visualization.
+
+The platform helps identify visual identity deviations before publication.
+
+### 5. ✍️ AI Smart Rewrite Studio
+
+Transforms non-compliant content into brand-aligned alternatives.
+
+Three rewriting modes:
+
+**Professional Enterprise**
+- Formal and authoritative.
+- Clear and accurate.
+- Enterprise communication style.
+
+**Friendly & Approachable**
+- Warm and conversational.
+- Easy-to-understand language.
+- Audience-friendly messaging.
+
+**Marketing-Oriented**
+- Persuasive and engaging.
+- Brand-aligned promotional language.
+- Responsible marketing claims.
+
+Includes before-and-after comparison and user-controlled acceptance or rejection.
+
+### 6. 🧩 Brand Guideline Clarity Analyzer
+
+Goes beyond content checking by examining the quality of the brand guidelines themselves.
+
+Identifies:
+
+- Conflicting communication rules.
+- Ambiguous instructions.
+- Missing policy definitions.
+- Inconsistent tone requirements.
+- Unclear terminology restrictions.
+
+It provides recommendations to improve the organization's brand governance framework.
+
+### 7. 🧠 Brand Memory & Recurring Error Detection
+
+Learns from historical governance review records.
+
+- Identifies frequently repeated violations.
+- Detects recurring terminology problems.
+- Highlights departmental error patterns.
+- Generates actionable coaching recommendations.
+- Supports continuous governance improvement.
+
+### 8. 👥 Human Review & Approval Workflow
+
+A role-based governance environment with three user roles:
+
+| Role | Responsibilities |
+|---|---|
+| ADMIN | Manage brand policies, facts, guidelines, and analytics |
+| CREATOR | Submit content, analyse violations, and apply corrections |
+| REVIEWER | Review submissions, provide feedback, and approve content |
+
+**Workflow:**
+
+`Draft → Analysing → Review Required → Revision Requested → Resubmitted → Approved`
+
+The system supports reviewer comments, revision comparison, approval actions, and audit history.
+
+### 9. 🌐 Bilingual Experience
+
+Designed for both English and Tamil users.
+
+- English interface.
+- தமிழ் interface.
+- Bilingual navigation and instructions.
+- Localized explanations and notifications.
+- Tamil terminology support where implemented in the analysis engine.
+
+### 10. 📊 Governance Analytics Dashboard
+
+Provides governance insights through five interactive charts:
+
+1. Submission Status Distribution – Pie Chart.
+2. Violation Severity Distribution – Doughnut Chart.
+3. Violation Categories – Bar Chart.
+4. Compliance Performance – Trend Line.
+5. Most Frequent Violations – Horizontal Bar Chart.
+
+Additional capabilities:
+
+- Governance KPI cards.
+- Historical review insights.
+- Recurring violation analysis.
+- CSV governance report export.
+
+Analytics are intended to be derived from database records rather than fabricated demonstration metrics.
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                  BRANDGUARD AI
+                        |
+        +---------------+----------------+
+        |                                |
+   FRONTEND LAYER                   API LAYER
+        |                                |
+ React 18 + Tailwind CSS             FastAPI
+ Chart.js + Lucide Icons             Pydantic
+        |                                |
+        +---------------+----------------+
+                        |
+               INTELLIGENCE ENGINES
+                        |
+       +----------------+------------------+
+       |                |                  |
+   NLP Audit       Fact Verification   Visual Guardian
+       |                |                  |
+   Rewrite Studio   Document Parser   Image Analysis
+       |                |                  |
+       +----------------+------------------+
+                        |
+                GOVERNANCE SERVICES
+                        |
+       +----------------+------------------+
+       |                |                  |
+   RBAC System     Approval Workflow   Brand Memory
+       |                |                  |
+       +----------------+------------------+
+                        |
+                   DATABASE
+                        |
+              SQLAlchemy ORM
+                        |
+             SQLite / PostgreSQL
 ```
-+-----------------------------------------------------------------------------------+
-|                                 BRANDGUARD AI                                     |
-+-----------------------------------------------------------------------------------+
-|  FRONTEND LAYER                                                                   |
-|  - Modern SPA: React 18, Tailwind CSS, Lucide Icons, Chart.js                     |
-|  - Responsive Compact Sidebar (230px), Real 4K Hero Background with Overlay       |
-|  - Full English + Tamil (தமிழ்) Localization Dictionary                           |
-+-----------------------------------------------------------------------------------+
-|  API ROUTING & SECURITY (FastAPI + Pydantic)                                      |
-|  - /api/auth       (HS256 JWT, PBKDF2 Hashing, Instant 1-Click Demo Role Switcher)   |
-|  - /api/scanner    (Text, PDF, DOCX, CSV, Safe SSRF URL Scraper)                   |
-|  - /api/brand      (Guidelines, Approved Facts, Terminology, Asset Registry)     |
-|  - /api/visual     (Dominant Color Extraction, Delta-E Match, WCAG Contrast Ratio)|
-|  - /api/rewrite    (3 Style Modes, Side-by-Side Diff Alignment)                   |
-|  - /api/review     (RBAC State Machine, Discussion Feed, Audit Logs)              |
-|  - /api/analytics  (DB-derived Analytics, Real Chart Telemetry, CSV Export)       |
-|  - /api/clarity    (Guideline Conflict & Ambiguity Detector)                      |
-|  - /api/memory     (Recurring Departmental Error Telemetry)                       |
-+-----------------------------------------------------------------------------------+
-|  CORE ENGINES (Python 3.12)                                                       |
-|  - NLP & Audit Engine    - Fact Verifier           - Visual Guardian Engine        |
-|  - Document Extractor    - Rewrite Studio Engine   - Guideline Clarity Engine     |
-+-----------------------------------------------------------------------------------+
-|  DATABASE LAYER (SQLAlchemy ORM)                                                  |
-|  - SQLite (Local Dev) / PostgreSQL (Cloud Deployment Compatible)                  |
-|  - 15 Relational Tables: Users, Orgs, Profiles, Guidelines, Facts, Rules,        |
-|    Assets, Submissions, Analyses, Issues, Rewrites, Comments, Actions, Logs     |
-+-----------------------------------------------------------------------------------+
-```
 
 ---
 
-## ⚡ Quick Start & Local Execution
+## 🛠️ Technology Stack
 
-### 1. Prerequisites
-- Python 3.10+ (Python 3.12 recommended)
-- Standard web browser (Chrome, Edge, Firefox, Safari)
+| Category | Technologies |
+|---|---|
+| Frontend | React 18, Tailwind CSS |
+| Programming | Python 3.12, JavaScript |
+| Backend | FastAPI, Pydantic |
+| Database | SQLite, PostgreSQL compatible |
+| ORM | SQLAlchemy |
+| Authentication | JWT, PBKDF2 |
+| AI & NLP | Natural Language Processing |
+| Computer Vision | Pillow, Color Science |
+| Visualization | Chart.js |
+| Document Processing | PDF, DOCX, TXT, CSV |
+| Icons | Lucide Icons |
+| API Documentation | Swagger UI, ReDoc |
 
-### 2. Run the Platform
-In the root directory, simply run:
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+
+- Python 3.10 or above.
+- Node.js and npm (if frontend dependencies require separate installation).
+- Git.
+- VS Code or another code editor.
+- Modern web browser.
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/sarathkumarraids2025/brandguard-ai.git
+```
+
+### Step 2: Navigate to Project
+
+```bash
+cd brandguard-ai
+```
+
+### Step 3: Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate on Windows:
+
+```powershell
+venv\Scripts\activate
+```
+
+### Step 4: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 5: Run the Application
 
 ```bash
 python run.py
 ```
 
-Open your browser to:
-- **Web Application:** [http://127.0.0.1:8000](http://127.0.0.1:8000)
-- **Interactive Swagger API Documentation:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-- **ReDoc Alternative Documentation:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+### Step 6: Access the Platform
 
-### 3. Run Automated Quality Assurance Test Suite
-The backend contains a 12-stage automated QA test suite verifying all critical components:
+| Service | URL |
+|---|---|
+| Web Application | http://127.0.0.1:8000 |
+| Swagger API Docs | http://127.0.0.1:8000/docs |
+| ReDoc | http://127.0.0.1:8000/redoc |
+
+---
+
+## 🔐 Demo Access
+
+The platform provides demo role accounts for evaluating role-based functionality.
+
+| Role | Email | Password |
+|---|---|---|
+| ADMIN | admin@brandguard.ai | BrandGuard2026! |
+| CREATOR | creator@brandguard.ai | BrandGuard2026! |
+| REVIEWER | reviewer@brandguard.ai | BrandGuard2026! |
+
+**Note:** These are development/demo credentials. Replace default credentials and configure secure secrets before public deployment.
+
+---
+
+## 🧪 Testing & Quality Assurance
+
+Run the backend test suite:
 
 ```bash
 cd backend
 python tests/run_tests.py
 ```
 
-*Expected output: `ALL 12/12 QA TESTS PASSED SUCCESSFULLY! (100% PASS RATE)`*
+The project includes a 12-stage QA test suite.
+
+Expected result, if all tests pass:
+
+```text
+ALL 12/12 QA TESTS PASSED SUCCESSFULLY!
+```
+
+Actual test results should be verified against the current codebase.
 
 ---
 
-## 👥 Demo Accounts & 1-Click Role Switcher
+## 🔒 Security & Responsible AI
 
-For instant testing by hackathon evaluators, BRANDGUARD AI features a **1-Click Role Switcher** in the left sidebar and header:
+BrandGuard AI is designed around responsible governance principles.
 
-| Role | Demo Email | Password | Permissions |
-|---|---|---|---|
-| **ADMIN** | `admin@brandguard.ai` | `BrandGuard2026!` | Manage brand guidelines, facts, terminology, all submissions, analytics, clarity engine |
-| **CREATOR** | `creator@brandguard.ai` | `BrandGuard2026!` | Scan content, view audit findings, generate rewrites, apply corrections, resubmit |
-| **REVIEWER** | `reviewer@brandguard.ai` | `BrandGuard2026!` | Review submissions, add feedback comments, approve, request revisions, reject |
+**Security**
+- JWT-based authentication.
+- PBKDF2 password hashing.
+- Role-based access control.
+- URL validation and SSRF protection.
+- Protected governance operations.
 
----
+**Explainability**
+- Evidence-backed fact verification.
+- Transparent unsupported-claim reporting.
+- Explainable compliance findings.
+- Traceable review decisions.
 
-## 🧪 Step-by-Step Hackathon Verification Workflow
-
-1. **Examine the Homepage:**
-   - Notice the project-relevant high-resolution background image (`hero-bg.jpg`) with dark overlay.
-   - Switch language to **தமிழ் (Tamil)** in the header: observe navigation, headlines, and buttons translating seamlessly.
-2. **Launch Content Scanner:**
-   - Click **"Load Sample Violations (EN)"** to load a test draft containing:
-     - Lifetime warranty claim (contradicts approved 12-month policy).
-     - "Cheap" and "foolproof" (prohibited brand terminology).
-     - "Cuts costs by 99% guaranteed" (unsubstantiated promotional claim).
-     - Informal slang "gonna" and excessive punctuation "!!!".
-   - Click **"Analyse with BrandGuard AI"**: observe multi-stage analysis progress.
-   - Review the Deep Audit Results:
-     - Note the **48.5% compliance score** and **Critical Risk** classification.
-     - Note the exact evidence citation for the warranty contradiction referencing `Legal Warranty Charter 2026`.
-     - Note the transparent statement `"Unable to verify against approved sources"` on unverified claims.
-3. **Open AI Smart Rewrite Studio:**
-   - Click **"Rewrite Studio"** on any detected issue.
-   - Inspect the three modes: **Professional**, **Friendly**, and **Marketing**.
-   - Review the side-by-side Before & After comparison and accept the correction.
-4. **Test Visual Brand Guardian:**
-   - Navigate to **Visual Guardian**.
-   - Click **"Load Creative with Violations"**:
-     - View extracted dominant colors, off-brand palette warnings, and WCAG contrast failure (1.6:1).
-     - Observe the highlighted bounding box overlays on the image canvas.
-   - Click **"Load Compliant Creative"**:
-     - Observe 100% brand color match, 8.2:1 contrast ratio, and approved top-left logo clearance.
-5. **Human Review & Approval:**
-   - Navigate to **Review & Approval Hub**.
-   - Select a submission in `Review Required` or `Revision Requested` status.
-   - Post a comment in the reviewer discussion thread.
-   - Transition the workflow state to **Approved** or **Request Revision**: observe state change reflected in the immutable audit trail.
-6. **Governance Analytics & CSV Export:**
-   - Navigate to **Analytics**.
-   - View the 5 real database-derived charts (Status Pie, Severity Doughnut, Category Bar, Compliance Trend Line, Top Violations Horizontal Bar).
-   - Review the **Brand Memory & Recurring Error Telemetry** table.
-   - Click **"Download CSV Governance Report"** to download the real spreadsheet.
-7. **Guideline Clarity Analyzer:**
-   - Navigate to **Brand Intelligence Brain** → **Guideline Clarity Analyzer** tab.
-   - Observe the detected conflict between **[Voice] Authoritative Corporate Voice** and **[Tone] Playful and Casual Social Tone** with admin remediation advice.
+**Human Oversight**
+- Human approval before critical publication.
+- Reviewer feedback and revision workflows.
+- Audit history.
+- User-controlled rewrite acceptance.
 
 ---
 
-## 🔒 Security & Responsible AI Commitments
+## 🌍 Real-World Applications
 
-- **SSRF Protection:** URL scanner validates IP addresses and blocks localhost, link-local (169.254.x), loopback, and private ranges.
-- **NIST-Standard Authentication:** Passwords hashed with PBKDF2-HMAC-SHA256 (100,000 rounds) and RFC 7519 HS256 JWT tokens.
-- **Explainable Scores:** Bounded mathematical formulas with explicit penalty accounting. Zero arbitrary hallucinated metrics.
-- **Human-in-the-Loop:** System strictly mandates human review before critical enterprise publication.
+BrandGuard AI can support organizations operating across multiple communication channels.
+
+| Industry | Potential Application |
+|---|---|
+| Banking & Finance | Regulatory and marketing content checks |
+| Healthcare | Approved medical communication review |
+| E-commerce | Product description consistency |
+| Education | Institutional communication governance |
+| Technology | Product claims and technical content validation |
+| Marketing Agencies | Multi-brand content governance |
+| Enterprise Organizations | Distributed team brand compliance |
 
 ---
 
-## 📄 License
-Developed for the **BRANDGUARD AI** Hackathon. Built with enterprise craftsmanship and precision.
+## 💡 What Makes BrandGuard AI Different?
+
+Traditional content tools primarily focus on spelling, grammar, and readability.
+
+BrandGuard AI introduces a broader governance approach:
+
+- It checks not only how content is written, but whether its claims are supported.
+- It evaluates both textual and visual brand consistency.
+- It examines the quality of the guidelines themselves.
+- It connects content analysis with human approval workflows.
+- It identifies recurring governance issues from historical records.
+- It provides explainable findings instead of unsupported AI-generated conclusions.
+
+**The core innovation is bringing brand intelligence, evidence verification, visual inspection, and human governance together in one platform.**
+
+---
+
+## 🔮 Future Enhancements
+
+Potential future development directions:
+
+- Advanced multilingual NLP models.
+- Real-time browser-based content monitoring.
+- Direct integrations with CMS platforms.
+- Social media publishing governance.
+- Advanced logo detection using deep learning.
+- LLM-powered brand-aware content generation.
+- Enterprise multi-organization support.
+- Automated policy version tracking.
+- Advanced compliance risk prediction.
+- Workflow integrations with enterprise collaboration tools.
+
+---
+
+## 📄 Project Information
+
+| Detail | Information |
+|---|---|
+| Project Name | BrandGuard AI |
+| Category | Artificial Intelligence / Enterprise SaaS |
+| Domain | Brand Governance & Content Intelligence |
+| Architecture | Full-Stack Application |
+| Backend | Python / FastAPI |
+| Frontend | React |
+| Database | SQLAlchemy-supported databases |
+| Interface | English + Tamil |
+| Development Purpose | Hackathon Project |
+
+---
+
+## 👨‍💻 Developed By
+
+**SARATHKUMAR R**
+
+B.Tech – Artificial Intelligence and Data Science
+
+GitHub: [@sarathkumarraids2025](https://github.com/sarathkumarraids2025)
+
+---
+
+<p align="center">
+
+### 🛡️ BRANDGUARD AI
+
+**Every Message Matters. Every Brand Deserves Consistency.**
+
+*Building a future where every brand communication is accurate, consistent, transparent, and trustworthy.*
+
+</p>
+
